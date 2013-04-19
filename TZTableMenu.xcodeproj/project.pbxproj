@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D15AD3B171FEAB400CA1238 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D15AD3A171FEAB400CA1238 /* Foundation.framework */; };
+		0D15AD4E171FEACB00CA1238 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D15AD4D171FEACB00CA1238 /* UIKit.framework */; };
+		0D15AD4F171FEACB00CA1238 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D15AD3A171FEAB400CA1238 /* Foundation.framework */; };
+		0D15AD51171FEACB00CA1238 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D15AD50171FEACB00CA1238 /* CoreGraphics.framework */; };
+		0D15AD76171FEB1B00CA1238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD69171FEB0800CA1238 /* main.m */; };
+		0D15AD77171FEB2000CA1238 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D15AD6C171FEB0800CA1238 /* Default-568h@2x.png */; };
+		0D15AD78171FEB2200CA1238 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D15AD6D171FEB0800CA1238 /* Default.png */; };
+		0D15AD79171FEB2500CA1238 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D15AD6E171FEB0800CA1238 /* Default@2x.png */; };
+		0D15AD7A171FEB2A00CA1238 /* TZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD70171FEB0800CA1238 /* TZAppDelegate.m */; };
+		0D15AD7D171FEC1800CA1238 /* TZMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD7C171FEC1800CA1238 /* TZMenu.m */; };
+		0D15AD80171FEC5000CA1238 /* TZMenuSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD7F171FEC5000CA1238 /* TZMenuSection.m */; };
+		0D15AD84171FF17A00CA1238 /* TZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD83171FF17A00CA1238 /* TZViewController.m */; };
+		0D15AD85171FF26200CA1238 /* libTZTableMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D15AD37171FEAB400CA1238 /* libTZTableMenu.a */; };
+		0D15AD88171FF2CE00CA1238 /* TZButtonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD87171FF2CE00CA1238 /* TZButtonElement.m */; };
+		0D15AD8B171FF2FD00CA1238 /* TZMenuElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD8A171FF2FC00CA1238 /* TZMenuElement.m */; };
+		0D15AD8E171FFC4B00CA1238 /* TZStepperElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD8D171FFC4B00CA1238 /* TZStepperElement.m */; };
+		0D15AD93172073EE00CA1238 /* TZTextHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD92172073EE00CA1238 /* TZTextHeader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D238C8D172185E60080A404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D15AD2F171FEAB400CA1238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D15AD36171FEAB400CA1238;
+			remoteInfo = TZTableMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D15AD35171FEAB400CA1238 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D15AD37171FEAB400CA1238 /* libTZTableMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTZTableMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D15AD3A171FEAB400CA1238 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0D15AD4C171FEACB00CA1238 /* Table View Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table View Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D15AD4D171FEACB00CA1238 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0D15AD50171FEACB00CA1238 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0D15AD68171FEB0800CA1238 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D15AD69171FEB0800CA1238 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D15AD6A171FEB0800CA1238 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		0D15AD6C171FEB0800CA1238 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0D15AD6D171FEB0800CA1238 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0D15AD6E171FEB0800CA1238 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0D15AD6F171FEB0800CA1238 /* TZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAppDelegate.h; sourceTree = "<group>"; };
+		0D15AD70171FEB0800CA1238 /* TZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAppDelegate.m; sourceTree = "<group>"; };
+		0D15AD72171FEB0800CA1238 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		0D15AD7B171FEC1800CA1238 /* TZMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZMenu.h; sourceTree = "<group>"; };
+		0D15AD7C171FEC1800CA1238 /* TZMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZMenu.m; sourceTree = "<group>"; };
+		0D15AD7E171FEC5000CA1238 /* TZMenuSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZMenuSection.h; sourceTree = "<group>"; };
+		0D15AD7F171FEC5000CA1238 /* TZMenuSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZMenuSection.m; sourceTree = "<group>"; };
+		0D15AD82171FF17A00CA1238 /* TZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZViewController.h; sourceTree = "<group>"; };
+		0D15AD83171FF17A00CA1238 /* TZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZViewController.m; sourceTree = "<group>"; };
+		0D15AD86171FF2CE00CA1238 /* TZButtonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZButtonElement.h; sourceTree = "<group>"; };
+		0D15AD87171FF2CE00CA1238 /* TZButtonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZButtonElement.m; sourceTree = "<group>"; };
+		0D15AD89171FF2FC00CA1238 /* TZMenuElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZMenuElement.h; sourceTree = "<group>"; };
+		0D15AD8A171FF2FC00CA1238 /* TZMenuElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZMenuElement.m; sourceTree = "<group>"; };
+		0D15AD8C171FFC4B00CA1238 /* TZStepperElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZStepperElement.h; sourceTree = "<group>"; };
+		0D15AD8D171FFC4B00CA1238 /* TZStepperElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZStepperElement.m; sourceTree = "<group>"; };
+		0D15AD8F171FFF3900CA1238 /* TZMenuElement+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TZMenuElement+Private.h"; sourceTree = "<group>"; };
+		0D15AD91172073EE00CA1238 /* TZTextHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTextHeader.h; sourceTree = "<group>"; };
+		0D15AD92172073EE00CA1238 /* TZTextHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTextHeader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D15AD34171FEAB400CA1238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D15AD3B171FEAB400CA1238 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D15AD49171FEACB00CA1238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D15AD85171FF26200CA1238 /* libTZTableMenu.a in Frameworks */,
+				0D15AD4E171FEACB00CA1238 /* UIKit.framework in Frameworks */,
+				0D15AD4F171FEACB00CA1238 /* Foundation.framework in Frameworks */,
+				0D15AD51171FEACB00CA1238 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D15AD2E171FEAB400CA1238 = {
+			isa = PBXGroup;
+			children = (
+				0D15AD71171FEB0800CA1238 /* Library */,
+				0D15AD67171FEB0800CA1238 /* Demo */,
+				0D15AD39171FEAB400CA1238 /* Frameworks */,
+				0D15AD38171FEAB400CA1238 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D15AD38171FEAB400CA1238 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D15AD37171FEAB400CA1238 /* libTZTableMenu.a */,
+				0D15AD4C171FEACB00CA1238 /* Table View Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D15AD39171FEAB400CA1238 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D15AD3A171FEAB400CA1238 /* Foundation.framework */,
+				0D15AD4D171FEACB00CA1238 /* UIKit.framework */,
+				0D15AD50171FEACB00CA1238 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D15AD67171FEB0800CA1238 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				0D15AD6B171FEB0800CA1238 /* Resources */,
+				0D15AD68171FEB0800CA1238 /* Info.plist */,
+				0D15AD69171FEB0800CA1238 /* main.m */,
+				0D15AD6A171FEB0800CA1238 /* Prefix.pch */,
+				0D15AD6F171FEB0800CA1238 /* TZAppDelegate.h */,
+				0D15AD70171FEB0800CA1238 /* TZAppDelegate.m */,
+				0D15AD82171FF17A00CA1238 /* TZViewController.h */,
+				0D15AD83171FF17A00CA1238 /* TZViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		0D15AD6B171FEB0800CA1238 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D15AD6C171FEB0800CA1238 /* Default-568h@2x.png */,
+				0D15AD6D171FEB0800CA1238 /* Default.png */,
+				0D15AD6E171FEB0800CA1238 /* Default@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0D15AD71171FEB0800CA1238 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0D15AD90172073C700CA1238 /* Elements */,
+				0D15AD91172073EE00CA1238 /* TZTextHeader.h */,
+				0D15AD92172073EE00CA1238 /* TZTextHeader.m */,
+				0D15AD7E171FEC5000CA1238 /* TZMenuSection.h */,
+				0D15AD7F171FEC5000CA1238 /* TZMenuSection.m */,
+				0D15AD7B171FEC1800CA1238 /* TZMenu.h */,
+				0D15AD7C171FEC1800CA1238 /* TZMenu.m */,
+				0D15AD72171FEB0800CA1238 /* Prefix.pch */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0D15AD90172073C700CA1238 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				0D15AD89171FF2FC00CA1238 /* TZMenuElement.h */,
+				0D15AD8F171FFF3900CA1238 /* TZMenuElement+Private.h */,
+				0D15AD8A171FF2FC00CA1238 /* TZMenuElement.m */,
+				0D15AD86171FF2CE00CA1238 /* TZButtonElement.h */,
+				0D15AD87171FF2CE00CA1238 /* TZButtonElement.m */,
+				0D15AD8C171FFC4B00CA1238 /* TZStepperElement.h */,
+				0D15AD8D171FFC4B00CA1238 /* TZStepperElement.m */,
+			);
+			name = Elements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D15AD36171FEAB400CA1238 /* TZTableMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D15AD45171FEAB400CA1238 /* Build configuration list for PBXNativeTarget "TZTableMenu" */;
+			buildPhases = (
+				0D15AD33171FEAB400CA1238 /* Sources */,
+				0D15AD34171FEAB400CA1238 /* Frameworks */,
+				0D15AD35171FEAB400CA1238 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TZTableMenu;
+			productName = TZTableView;
+			productReference = 0D15AD37171FEAB400CA1238 /* libTZTableMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0D15AD4B171FEACB00CA1238 /* Table Menu Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D15AD64171FEACB00CA1238 /* Build configuration list for PBXNativeTarget "Table Menu Demo" */;
+			buildPhases = (
+				0D15AD48171FEACB00CA1238 /* Sources */,
+				0D15AD49171FEACB00CA1238 /* Frameworks */,
+				0D15AD4A171FEACB00CA1238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D238C8E172185E60080A404 /* PBXTargetDependency */,
+			);
+			name = "Table Menu Demo";
+			productName = "Table View Demo";
+			productReference = 0D15AD4C171FEACB00CA1238 /* Table View Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D15AD2F171FEAB400CA1238 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Tomáš Znamenáček";
+			};
+			buildConfigurationList = 0D15AD32171FEAB400CA1238 /* Build configuration list for PBXProject "TZTableMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0D15AD2E171FEAB400CA1238;
+			productRefGroup = 0D15AD38171FEAB400CA1238 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D15AD36171FEAB400CA1238 /* TZTableMenu */,
+				0D15AD4B171FEACB00CA1238 /* Table Menu Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D15AD4A171FEACB00CA1238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D15AD77171FEB2000CA1238 /* Default-568h@2x.png in Resources */,
+				0D15AD78171FEB2200CA1238 /* Default.png in Resources */,
+				0D15AD79171FEB2500CA1238 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D15AD33171FEAB400CA1238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D15AD7D171FEC1800CA1238 /* TZMenu.m in Sources */,
+				0D15AD80171FEC5000CA1238 /* TZMenuSection.m in Sources */,
+				0D15AD88171FF2CE00CA1238 /* TZButtonElement.m in Sources */,
+				0D15AD8B171FF2FD00CA1238 /* TZMenuElement.m in Sources */,
+				0D15AD8E171FFC4B00CA1238 /* TZStepperElement.m in Sources */,
+				0D15AD93172073EE00CA1238 /* TZTextHeader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D15AD48171FEACB00CA1238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D15AD76171FEB1B00CA1238 /* main.m in Sources */,
+				0D15AD7A171FEB2A00CA1238 /* TZAppDelegate.m in Sources */,
+				0D15AD84171FF17A00CA1238 /* TZViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D238C8E172185E60080A404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D15AD36171FEAB400CA1238 /* TZTableMenu */;
+			targetProxy = 0D238C8D172185E60080A404 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D15AD43171FEAB400CA1238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0D15AD44171FEAB400CA1238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D15AD46171FEAB400CA1238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TZTableView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Library/Prefix.pch;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TZTableMenu;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0D15AD47171FEAB400CA1238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TZTableView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Library/Prefix.pch;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TZTableMenu;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0D15AD65171FEACB00CA1238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Demo/Prefix.pch;
+				INFOPLIST_FILE = Demo/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0D15AD66171FEACB00CA1238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Demo/Prefix.pch;
+				INFOPLIST_FILE = Demo/Info.plist;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D15AD32171FEAB400CA1238 /* Build configuration list for PBXProject "TZTableMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D15AD43171FEAB400CA1238 /* Debug */,
+				0D15AD44171FEAB400CA1238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D15AD45171FEAB400CA1238 /* Build configuration list for PBXNativeTarget "TZTableMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D15AD46171FEAB400CA1238 /* Debug */,
+				0D15AD47171FEAB400CA1238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D15AD64171FEACB00CA1238 /* Build configuration list for PBXNativeTarget "Table Menu Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D15AD65171FEACB00CA1238 /* Debug */,
+				0D15AD66171FEACB00CA1238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D15AD2F171FEAB400CA1238 /* Project object */;
+}
