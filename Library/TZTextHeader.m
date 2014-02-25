@@ -16,7 +16,7 @@
     [self setBackgroundColor:[UIColor clearColor]];
     [self setPadding:CGSizeMake(40, 10)];
     [self setShadowColor:[UIColor clearColor]];
-    [self setTextAlignment:NSTextAlignmentLeft];
+    [self setTextAlignment:(UITextAlignment)NSTextAlignmentLeft];
     [self setShadowOffset:CGSizeZero];
     return self;
 }
@@ -63,7 +63,7 @@
     [label setTextAlignment:NSTextAlignmentCenter];
     [label setShadowColor:_shadowColor];
     [label setShadowOffset:_shadowOffset];
-    [label setTextAlignment:_textAlignment];
+    [label setTextAlignment:(NSTextAlignment)_textAlignment];
     [label setNumberOfLines:0];
     [label sizeToFit];
     return label;
