@@ -1,5 +1,8 @@
 #import "TZMenu.h"
 
+static const CGFloat TZDefaultHeaderHeight = 36;
+static const CGFloat TZDefaultFooterHeight = 31;
+
 @implementation TZMenu
 
 - (id) init
@@ -45,24 +48,40 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (UIView*) tableView: (UITableView*) tableView viewForHeaderInSection: (NSInteger) section
+- (NSString*) tableView: (UITableView*) tableView titleForHeaderInSection: (NSInteger) index
 {
-    return [[_sections objectAtIndex:section] headerView];
+    return [[_sections objectAtIndex:index] headerText];
 }
 
-- (UIView*) tableView: (UITableView*) tableView viewForFooterInSection: (NSInteger) section
+- (UIView*) tableView: (UITableView*) tableView viewForHeaderInSection: (NSInteger) index
 {
-    return [[_sections objectAtIndex:section] footerView];
+    TZMenuSection *section = [_sections objectAtIndex:index];
+    return [section headerText] ? nil : [section headerView];
 }
 
-- (CGFloat) tableView: (UITableView*) tableView heightForHeaderInSection: (NSInteger) section
+- (CGFloat) tableView: (UITableView*) tableView heightForHeaderInSection: (NSInteger) index
 {
-    return CGRectGetHeight([[[_sections objectAtIndex:section] headerView] bounds]);
+    TZMenuSection *section = [_sections objectAtIndex:index];
+    return [section headerText] ? TZDefaultHeaderHeight :
+        CGRectGetHeight([[section headerView] bounds]);
 }
 
-- (CGFloat) tableView: (UITableView*) tableView heightForFooterInSection: (NSInteger) section
+- (NSString*) tableView: (UITableView*) tableView titleForFooterInSection: (NSInteger) index
 {
-    return CGRectGetHeight([[[_sections objectAtIndex:section] footerView] bounds]);
+    return [[_sections objectAtIndex:index] footerText];
+}
+
+- (UIView*) tableView: (UITableView*) tableView viewForFooterInSection: (NSInteger) index
+{
+    TZMenuSection *section = [_sections objectAtIndex:index];
+    return [section footerText] ? nil : [section footerView];
+}
+
+- (CGFloat) tableView: (UITableView*) tableView heightForFooterInSection: (NSInteger) index
+{
+    TZMenuSection *section = [_sections objectAtIndex:index];
+    return [section footerText] ? TZDefaultFooterHeight :
+        CGRectGetHeight([[section footerView] bounds]);
 }
 
 @end

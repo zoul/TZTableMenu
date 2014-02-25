@@ -41,7 +41,8 @@
         }],
     ]];
 
-    [section setHeaderView:[TZTextHeader textWithString:@"Fading"]];
+    [section setHeaderText:@"Fading"];
+    [section setFooterText:@"Doesn’t do anything, really"];
     [_menu addSection:section];
 }
 
