@@ -51,7 +51,7 @@
 /* Begin PBXFileReference section */
 		0D15AD37171FEAB400CA1238 /* libTZTableMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTZTableMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D15AD3A171FEAB400CA1238 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0D15AD4C171FEACB00CA1238 /* Table View Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table View Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D15AD4C171FEACB00CA1238 /* Table View Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Table View Demo.app"; path = "Table Menu Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D15AD4D171FEACB00CA1238 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0D15AD50171FEACB00CA1238 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0D15AD68171FEB0800CA1238 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +78,7 @@
 		0D15AD8F171FFF3900CA1238 /* TZMenuElement+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TZMenuElement+Private.h"; sourceTree = "<group>"; };
 		0D15AD91172073EE00CA1238 /* TZTextHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTextHeader.h; sourceTree = "<group>"; };
 		0D15AD92172073EE00CA1238 /* TZTextHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTextHeader.m; sourceTree = "<group>"; };
+		0D30706018BCFA6D0099CE6B /* TZTableMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZTableMenu.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +169,7 @@
 				0D15AD7B171FEC1800CA1238 /* TZMenu.h */,
 				0D15AD7C171FEC1800CA1238 /* TZMenu.m */,
 				0D15AD72171FEB0800CA1238 /* Prefix.pch */,
+				0D30706018BCFA6D0099CE6B /* TZTableMenu.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
