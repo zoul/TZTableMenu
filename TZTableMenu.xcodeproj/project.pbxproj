@@ -51,7 +51,7 @@
 /* Begin PBXFileReference section */
 		0D15AD37171FEAB400CA1238 /* libTZTableMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTZTableMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D15AD3A171FEAB400CA1238 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0D15AD4C171FEACB00CA1238 /* Table View Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Table View Demo.app"; path = "Table Menu Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D15AD4C171FEACB00CA1238 /* Table Menu Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table Menu Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D15AD4D171FEACB00CA1238 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0D15AD50171FEACB00CA1238 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0D15AD68171FEB0800CA1238 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				0D15AD37171FEAB400CA1238 /* libTZTableMenu.a */,
-				0D15AD4C171FEACB00CA1238 /* Table View Demo.app */,
+				0D15AD4C171FEACB00CA1238 /* Table Menu Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 			);
 			name = "Table Menu Demo";
 			productName = "Table View Demo";
-			productReference = 0D15AD4C171FEACB00CA1238 /* Table View Demo.app */;
+			productReference = 0D15AD4C171FEACB00CA1238 /* Table Menu Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -385,6 +385,7 @@
 		0D15AD65171FEACB00CA1238 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Demo/Prefix.pch;
@@ -398,6 +399,7 @@
 		0D15AD66171FEACB00CA1238 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Demo/Prefix.pch;

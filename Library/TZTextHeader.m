@@ -71,7 +71,7 @@
 
 - (void) sizeToFit
 {
-    int numberOfLines = [[self textLines] count];
+    int numberOfLines = (int) [[self textLines] count];
     CGSize textSize = [_text sizeWithFont:_font forWidth:self.superview.frame.size.width lineBreakMode:NSLineBreakByWordWrapping];
     CGFloat height = numberOfLines*textSize.height + _padding.height;
     [self setBounds:CGRectMake(0, 0, CGRectGetWidth([[self superview] bounds]), height)];

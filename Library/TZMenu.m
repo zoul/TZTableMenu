@@ -55,12 +55,12 @@
     return [[_sections objectAtIndex:section] footerView];
 }
 
-- (float) tableView: (UITableView*) tableView heightForHeaderInSection: (NSInteger) section
+- (CGFloat) tableView: (UITableView*) tableView heightForHeaderInSection: (NSInteger) section
 {
     return CGRectGetHeight([[[_sections objectAtIndex:section] headerView] bounds]);
 }
 
-- (float) tableView: (UITableView*) tableView heightForFooterInSection: (NSInteger) section
+- (CGFloat) tableView: (UITableView*) tableView heightForFooterInSection: (NSInteger) section
 {
     return CGRectGetHeight([[[_sections objectAtIndex:section] footerView] bounds]);
 }
