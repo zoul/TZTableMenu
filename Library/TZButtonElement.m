@@ -9,7 +9,6 @@
 {
     self = [super init];
     [self setCell:[[UITableViewCell alloc] initWithStyle:style reuseIdentifier:nil]];
-    [[self cell] setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     return self;
 }
 
