@@ -28,6 +28,7 @@
 
     [_menu addSection:[TZMenuSection sectionWithElements:@[
         [TZButtonElement buttonWithLabel:@"File Source" action:^(id sender) {
+            [sender flashCheckmark];
             NSLog(@"Foo");
         }],
     ]]];

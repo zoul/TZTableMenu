@@ -13,4 +13,6 @@ typedef void (^TZButtonElementAction)(TZButtonElement *sender);
 + (id) buttonWithLabel: (NSString*) label action: (TZButtonElementAction) action;
 + (id) buttonWithLabel: (NSString*) label target: (id) target action: (SEL) action;
 
+- (void) flashCheckmark;
+
 @end
