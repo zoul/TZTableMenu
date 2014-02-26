@@ -33,7 +33,7 @@
 + (id) buttonWithLabel: (NSString*) label target: (id) target action: (SEL) action
 {
     return [self buttonWithLabel:label action:^(TZButtonElement *sender) {
-        [target performSelector:action];
+        [target performSelector:action withObject:self];
     }];
 }
 

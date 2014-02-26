@@ -27,10 +27,12 @@
     [_tableView setDataSource:_menu];
 
     [_menu addSection:[TZMenuSection sectionWithElements:@[
-        [TZButtonElement buttonWithLabel:@"File Source" action:^(id sender) {
+        [TZButtonElement buttonWithLabel:@"Block Callback" action:^(id sender) {
             [sender flashCheckmark];
             NSLog(@"Foo");
         }],
+        [TZButtonElement buttonWithLabel:@"Target/Action" target:self
+            action:@selector(targetActionSampleMethod:)],
     ]]];
 
     TZMenuSection *section = [TZMenuSection sectionWithElements:@[
@@ -45,6 +47,11 @@
     [section setHeaderText:@"Fading"];
     [section setFooterText:@"Doesn’t do anything, really"];
     [_menu addSection:section];
+}
+
+- (void) targetActionSampleMethod: (TZButtonElement*) sender
+{
+    NSLog(@"Action sender: %@", sender);
 }
 
 @end
