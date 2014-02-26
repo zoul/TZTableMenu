@@ -32,9 +32,11 @@
 
 + (id) buttonWithLabel: (NSString*) label target: (id) target action: (SEL) action
 {
-    return [self buttonWithLabel:label action:^(TZButtonElement *sender) {
-        [target performSelector:action withObject:self];
+    TZButtonElement *button = [self buttonWithLabel:label action:nil];
+    [button setAction:^(id sender) {
+        [target performSelector:action withObject:sender];
     }];
+    return button;
 }
 
 #pragma clang diagnostic pop
