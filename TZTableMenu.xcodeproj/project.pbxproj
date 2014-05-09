@@ -24,6 +24,7 @@
 		0D15AD8B171FF2FD00CA1238 /* TZMenuElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD8A171FF2FC00CA1238 /* TZMenuElement.m */; };
 		0D15AD8E171FFC4B00CA1238 /* TZStepperElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD8D171FFC4B00CA1238 /* TZStepperElement.m */; };
 		0D15AD93172073EE00CA1238 /* TZTextHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15AD92172073EE00CA1238 /* TZTextHeader.m */; };
+		0D3F7448191D17A400DA881A /* TZLabelElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F7447191D17A400DA881A /* TZLabelElement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		0D15AD91172073EE00CA1238 /* TZTextHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTextHeader.h; sourceTree = "<group>"; };
 		0D15AD92172073EE00CA1238 /* TZTextHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTextHeader.m; sourceTree = "<group>"; };
 		0D30706018BCFA6D0099CE6B /* TZTableMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZTableMenu.h; sourceTree = "<group>"; };
+		0D3F7446191D17A400DA881A /* TZLabelElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLabelElement.h; sourceTree = "<group>"; };
+		0D3F7447191D17A400DA881A /* TZLabelElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLabelElement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 				0D15AD89171FF2FC00CA1238 /* TZMenuElement.h */,
 				0D15AD8F171FFF3900CA1238 /* TZMenuElement+Private.h */,
 				0D15AD8A171FF2FC00CA1238 /* TZMenuElement.m */,
+				0D3F7446191D17A400DA881A /* TZLabelElement.h */,
+				0D3F7447191D17A400DA881A /* TZLabelElement.m */,
 				0D15AD86171FF2CE00CA1238 /* TZButtonElement.h */,
 				0D15AD87171FF2CE00CA1238 /* TZButtonElement.m */,
 				0D15AD8C171FFC4B00CA1238 /* TZStepperElement.h */,
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D15AD7D171FEC1800CA1238 /* TZMenu.m in Sources */,
+				0D3F7448191D17A400DA881A /* TZLabelElement.m in Sources */,
 				0D15AD80171FEC5000CA1238 /* TZMenuSection.m in Sources */,
 				0D15AD88171FF2CE00CA1238 /* TZButtonElement.m in Sources */,
 				0D15AD8B171FF2FD00CA1238 /* TZMenuElement.m in Sources */,

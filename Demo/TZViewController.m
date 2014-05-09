@@ -1,8 +1,5 @@
 #import "TZViewController.h"
-#import "TZButtonElement.h"
-#import "TZStepperElement.h"
-#import "TZTextHeader.h"
-#import "TZMenu.h"
+#import "TZTableMenu.h"
 
 @interface TZViewController ()
 @property(strong) TZMenu *menu;
@@ -33,6 +30,7 @@
         }],
         [TZButtonElement buttonWithLabel:@"Target/Action" target:self
             action:@selector(targetActionSampleMethod:)],
+        [TZLabelElement labelWithText:@"Just a Label"],
     ]]];
 
     TZMenuSection *section = [TZMenuSection sectionWithElements:@[

@@ -2,4 +2,5 @@
 #import "TZMenuSection.h"
 #import "TZTextHeader.h"
 #import "TZButtonElement.h"
+#import "TZLabelElement.h"
 #import "TZStepperElement.h"
