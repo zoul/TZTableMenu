@@ -72,8 +72,8 @@
 - (void) sizeToFit
 {
     int numberOfLines = (int) [[self textLines] count];
-    CGSize textSize = [_text sizeWithFont:_font forWidth:self.superview.frame.size.width lineBreakMode:NSLineBreakByWordWrapping];
-    CGFloat height = numberOfLines*textSize.height + _padding.height;
+    CGRect boundingRect = [_text boundingRectWithSize:self.superview.frame.size options:0 attributes:nil context:nil];
+    CGFloat height = numberOfLines*CGRectGetHeight(boundingRect) + _padding.height;
     [self setBounds:CGRectMake(0, 0, CGRectGetWidth([[self superview] bounds]), height)];
 }
 
@@ -86,11 +86,11 @@
     float width = self.superview.frame.size.width-_padding.width;
     float y = 0;
     for (NSString *line in [self textLines]) {
-        CGSize size = [line sizeWithFont:_font constrainedToSize:CGSizeMake(width, 1000) lineBreakMode:NSLineBreakByWordWrapping];
+        CGRect boundingRect = [_text boundingRectWithSize:CGSizeMake(width, 1000) options:0 attributes:nil context:nil];
         UIView *label = [self labelForString:line];
-        [label setFrame:CGRectMake(_padding.width/2, _padding.height/2+y, width, size.height)];
+        [label setFrame:CGRectMake(_padding.width/2, _padding.height/2+y, width, CGRectGetHeight(boundingRect))];
         [self addSubview:label];
-        y += size.height + _lineSpacingCorrection;
+        y += CGRectGetHeight(boundingRect) + _lineSpacingCorrection;
     }
 
     [self sizeToFit];
